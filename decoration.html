@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Store</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/decoration.css" type="text/css">
+    <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="pumpkin-img">
+            <img src="images\pumpkin.gif" alt="Pumpkin">
+        </div>
+        <div class="header-text">
+            <h1>The Halloween Store</h1>
+            <h2>For the little Goblin in all of us!</h2>
+        </div>
+    </header>
+
+    <main>
+        <nav class="navbar">
+            <div class="flex-container">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="product.html">Product List</a></div>
+                <div><a href="personal.html">Personal</a></div>
+                <div class="current"><a href="Decoration.html">Decoration Items</a></div>
+                <div><a href="email.html"> Join Email</a></div>
+            </div>
+        </nav>
+        <aside class="aside">
+            <div class="flex-container">
+
+                <section class="right_item">
+                    <div> <a href="/decoration/outdoor.html" type="Halloween Items">Outdoor</a></div>
+                    <div><a href="/decoration/indoor.html" type="Halloween Items">Indoor</a></div>
+                    <div><a href="/decoration/table.html" type="Halloween Items">Table</a></div>
+                    <div><a href="/decoration/treats.html" type="Halloween Items">Treats</a> </div>
+                </section>
+
+                <section class="left_item">
+                    <h3>Some of my favorite decorating ideas</h3>
+
+                    <section class="slideshow-container">
+
+                        <h4 id="#heading" style="color: orange;">Spooky Pumpkin</h4>
+
+                        <div class="mySlides"><img src="decoration/images/carved_pumpkin.jpg" alt="Spooky Pumpkin"></div>
+                        <div class="mySlides"><img src="decoration/images/fireplace.jpg" alt="Fire Place"></div>
+                        <div class="mySlides"><img src="/decoration/images/front_door.jpg" alt="Front Door"></div>
+                        <div class="mySlides"><img src="/decoration/images/raven_mantel.jpg" alt="Raven Mantel"></div>
+                        <div class="mySlides"><img src="/decoration/images/table_setting.jpg" alt="Table Setting"></div>
+                    
+                    </section>
+
+                </section>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <script src="/js/days_to_halloween.js"></script>
+
+    </footer>
+
+    <script src="/js/slide_show.js"></script>
+    <script src="/js/jquery.slicknav.min.js"></script>
+    <script>
+        // Function to change the text
+        function changeText1() {
+            document.getElementById("#heading").textContent = "Fire Place";
+        }
+        function changeText2() {
+            document.getElementById("#heading").textContent = "Front Door";
+        }
+        function changeText3() {
+            document.getElementById("#heading").textContent = "Raven Mantel";
+        }
+        function changeText4() {
+            document.getElementById("#heading").textContent = "Table Setting";
+        }
+        function changeText5() {
+            document.getElementById("#heading").textContent = "Spooky Pumpkin";
+        }
+
+        setTimeout(changeText1, 5200);
+        setTimeout(changeText2, 10000);
+        setTimeout(changeText3, 15000);
+        setTimeout(changeText4, 20000);
+
+    </script>
+
+</body>
+
+</html>

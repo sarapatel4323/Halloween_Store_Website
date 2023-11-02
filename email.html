@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Store</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/email.css" type="text/css">
+    <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <div class="pumpkin-img">
+            <img src="images\pumpkin.gif" alt="Pumpkin">
+        </div>
+        <div class="header-text">
+            <h1>The Halloween Store</h1>
+            <h2>For the little Goblin in all of us!</h2>
+        </div>
+    </header>
+
+    <main>
+        <nav class="navbar">
+            <div class="flex-container">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="product.html">Product List</a></div>
+                <div><a href="personal.html">Personal</a></div>
+                <div><a href="Decoration.html">Decoration Items</a></div>
+                <div class="current"><a href="email.html"> Join Email</a></div>
+            </div>
+        </nav>
+        <aside class="aside">
+            <div class="flex-container">
+                <section class="right_item">
+
+                    <div> <a href="props.html">Props</a></div>
+                    <div><a href="costume.html">costumes</a></div>
+                    <div><a href="special.html">Special FX</a></div>
+                    <div><a href="mask.html">Masks</a> </div>
+                </section>
+
+                <section class="left_item">
+
+                    <form action="subscribe.html" method="GET">
+                        <fieldset>
+                            <legend>Please Enter the following information:</legend>
+                            <label for="fname">First Name :</label>
+                            <input type="text" id="fname" name="firstname" autofocus required>
+                            <br> <br> <br>
+
+                            <label for="lname">Last Name :</label>
+                            <input type="text" id="lname" name="lastname" required>
+                            <br> <br> <br>
+
+                            <label for="email"> Email :</label>
+                            <input type="email" name="email" id="email" required>
+                            <br> <br> <br>
+
+                            <label for="zip">Zip Code :</label>
+                            <input type="text" id="zip" name="zip" pattern="\d{5}"
+                                placeholder=" Optional but appricited: 99999">
+                            <br> <br> <br><br><br>
+
+                            <input type="submit" value="Subscribe">
+                        </fieldset>
+                    </form>
+                    
+                </section>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sara Patel</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(/images/bats.gif);
+}
+
+/* Style for body */
+body {
+    width: 800px;
+    background-color: white;
+    font-family: sans-serif;
+    /* border: 2px solid black; */
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.888);
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 0.5em;
+}
+
+/* Style for footer */
+footer {
+    height: 40px;
+    border-top: 1px solid black;
+    background: linear-gradient(45deg, black 0%, orange 50%, white 80%);
+    background: -webkit-linear-gradient(45deg, black 0%, orange 50%, white 100%);
+}
+
+footer p {
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h1:first-letter {
+    font-size: 1.5em;
+}
+
+/* Style for header */
+header {
+    border-bottom: 1px solid black;
+    background: linear-gradient(45deg, white 0%, orange 50%, black 80%);
+    background: -webkit-linear-gradient(45deg, white 0%, orange 50%, black 100%);
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.pumpkin-img {
+    margin-bottom: 8px;
+}
+
+.pumpkin-img img {
+    float: left;
+    margin-right: 10px;
+    width: 12%;
+}
+
+.header-text {
+    display: inline-block;
+}
+
+.header-text h1 h2 {
+    color: black;
+    font-style: italic;
+    text-shadow: 1px 1px black;
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 29px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+
+/* style for navbar*/
+
+.navbar .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;
+    align-content: space-evenly;
+}
+
+.navbar .flex-container div {
+    width: auto;
+    padding: 9px;
+    text-align: center;
+}
+
+.navbar .flex-container a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.navbar .flex-container div:hover {
+    background-color: lightgray;
+}
+
+.navbar .flex-container a:hover {
+    color: orange;
+}
+
+.current a:visited {
+    color: orange;
+}
+
+/* style for aside */
+
+.aside .flex-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.aside .flex-container div {
+    border: 1px solid black;
+    background-color: orange;
+    width: 100px;
+    height: 30px;
+    margin-top: 0px;
+    padding: 3px;
+    text-align: center;
+}
+
+.aside .flex-container a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* style for left and right side section */
+
+.aside .flex-container .right_item {
+    margin-top: 5%;
+    margin-right: 135px;
+}
+
+.aside .flex-container .right_item div {
+    margin-bottom: 12%;
+    align-items: center;
+}
+
+.aside .flex-container .left_item {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-right: 9%;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+
+}
+
+h4 {
+    font-size: 20px;
+    color: orange;
+    margin-bottom: 18px;
+}
+
+.aside .flex-container .left_item .slideshow-container {
+    padding-top: 2;
+    padding-left: 50px;
+    padding-bottom: 400px;
+    right: 0;
+    margin: auto;
+    position: relative;
+}
+
+.aside .flex-container .left_item .mySlides {
+    display: none;
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    background-color: white;
+    border: 0px;
+}
+
+.aside .flex-container .left_item .mySlides img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* style for samll screen */
+
+@media only screen and (max-width: 479px) {
+    h1 {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 10px;
+        margin-left: 4px;
+    }
+
+    h3 {
+        font-size: 2100px;
+        margin-top: 19px;
+        margin-bottom: 20px;
+    }
+}

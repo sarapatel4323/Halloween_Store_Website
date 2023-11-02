@@ -1,0 +1,209 @@
+html {
+    background-image: url(/images/bats.gif);
+}
+/* style for grid container */
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        "header header  header header header "
+        "navigation navigation navigation navigation navigation"
+        "sidebar sidebar main main main"
+        "footer footer footer footer footer ";
+}
+/* Style for header */
+header {
+    border-bottom: 1px solid black;
+    background: linear-gradient(45deg, white 0%, orange 50%, black 80%);
+    background: -webkit-linear-gradient(45deg, white 0%, orange 50%, black 100%);
+    border-bottom: 1px solid black;
+    padding: 5px;
+    grid-column-start:1;
+    grid-column-end: 6 ;
+    grid-row: 1;
+}
+
+.pumpkin-img img {
+    float: left;
+    margin-right: 10px;
+    width: 12%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.header-text {
+    display: inline-block;
+}
+
+.header-text h1 h2 {
+    color: black;
+    font-style: italic;
+    text-shadow: 1px 1px black;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.header-text h1 {
+    font-size: 29px;
+    margin-bottom: 0px;
+}
+
+.header-text h2 {
+    font-size: 20px;
+    margin-left: 4px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+h1:first-letter {
+    font-size: 1.5em;
+}
+
+/* Style for footer */
+footer {
+    border-top: 1px solid black;
+    background: linear-gradient(45deg, black 0%, orange 50%, white 80%);
+    background: -webkit-linear-gradient(45deg, black 0%, orange 50%, white 100%);
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row: 4;
+}
+
+footer p {
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* style for body section */
+body {
+    width: 800px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.888);
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 0.5em;
+    font-family: sans-serif;
+}
+
+/* style for navbar*/
+
+.navbar .item1 {
+    background-color: black;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row: 2;
+    display:flex;
+    text-align: center;
+}
+
+.navbar .item1 div {
+    width: auto;
+    padding: 9px;
+    text-align: center;
+}
+
+.navbar .item1 a {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.navbar .item1 div:hover {
+    background-color: lightgray;
+}
+
+.navbar .item1 a:hover {
+    color: orange;
+}
+
+/* style for  */
+
+.item2 {
+    margin-left: 25px;
+    grid-row: 3;
+    display:flex;
+}
+
+.item2 div {
+    border: 1px solid black;
+    background-color: orange;
+    width: 90px;
+    height: 25px;
+    margin-top: 0px;
+    padding: 3px;
+    text-align: center;
+}
+
+.item2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* style for left and right side section */
+.item2 .left_item {
+    display: grid;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.item2 .right_item {
+    margin-right: 8%;
+    margin-top: 5%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item2 .right_item div {
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+h3 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+h4 {
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+}
+
+@media only screen and (max-width: 479px) {
+    h1 {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 10px;
+        margin-left: 4px;
+    }
+
+    h3 {
+        font-size: 2100px;
+        margin-top: 19px;
+        margin-bottom: 20px;
+    }
+}
